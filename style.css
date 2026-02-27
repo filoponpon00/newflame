@@ -13,6 +13,19 @@ body {
     text-align: center;
 }
 
+.birthday-pic {
+    width: 100%;           /* Susunod sa lapad ng card */
+    max-width: 300px;      /* Pero hindi lalampas sa 300px para hindi pixelated */
+    border-radius: 15px;   /* Round corners para malambot tingnan */
+    border: 5px solid #fff; /* White border na parang Polaroid */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* May konting anino */
+    margin: 20px 0;
+    transition: transform 0.3s; /* Para may effect pag tinapatan ng mouse */
+}
+
+.birthday-pic:hover {
+    transform: scale(1.05); /* Lalaki nang bahagya pag hinawakan/tinapatan */
+}
 .card {
     background: white;
     padding: 40px;
@@ -71,4 +84,5 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+
 }
