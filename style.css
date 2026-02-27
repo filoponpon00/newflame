@@ -14,13 +14,14 @@ body {
 }
 
 .birthday-pic {
-    width: 100%;           /* Susunod sa lapad ng card */
-    max-width: 300px;      /* Pero hindi lalampas sa 300px para hindi pixelated */
-    border-radius: 15px;   /* Round corners para malambot tingnan */
-    border: 5px solid #fff; /* White border na parang Polaroid */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* May konting anino */
-    margin: 20px 0;
-    transition: transform 0.3s; /* Para may effect pag tinapatan ng mouse */
+    width: 90%;            /* Sasakop sa 90% ng lapad ng phone para may space sa gilid */
+    max-width: 400px;      /* Hindi lalampas sa 400px kahit sa malaking monitor */
+    height: auto;          /* Para hindi ma-stretch ang image */
+    border-radius: 15px;   /* Para bilugan ang kanto, mas cute tingnan! */
+    display: block;        /* Para ma-center natin */
+    margin: 20px auto;     /* I-center ang picture sa gitna ng page */
+    border: 5px solid white; /* Parang Polaroid effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Konting anino para lumitaw */
 }
 
 .birthday-pic:hover {
@@ -86,3 +87,4 @@ body {
     to { opacity: 1; }
 
 }
+
