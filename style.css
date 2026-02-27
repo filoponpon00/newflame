@@ -1,0 +1,88 @@
+/* style.css */
+body {
+    background: #ffe4e1; /* Pastel Pink */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+.title {
+    color: #ff4d6d;
+}
+
+.message {
+    color: #555;
+    line-height: 1.6;
+}
+
+.birthday-pic {
+    width: 100%;           /* Susunod sa lapad ng card */
+    max-width: 300px;      /* Pero hindi lalampas sa 300px para hindi pixelated */
+    border-radius: 15px;   /* Round corners para malambot tingnan */
+    border: 5px solid #fff; /* White border na parang Polaroid */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* May konting anino */
+    margin: 20px 0;
+    transition: transform 0.3s; /* Para may effect pag tinapatan ng mouse */
+}
+
+.birthday-pic:hover {
+    transform: scale(1.05); /* Lalaki nang bahagya pag hinawakan/tinapatan */
+}
+
+.heart {
+    font-size: 50px;
+    animation: pulse 1s infinite;
+    margin: 20px 0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.btn {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c9184a;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ff4d6d;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

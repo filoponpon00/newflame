@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Love!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Happy Birthday, My Love! 🎂</h1>
+            <p class="message">
+                To the person who makes my world brighter, thank you for being you. 
+                I made this simple page just to let you know how much I love you.
+            </p>
+            <div class="heart">❤️</div>
+            <button class="btn" onclick="revealGift()">Click for a Surprise!</button>
+            <div id="surprise" class="hidden">
+                 <h2>Surprise! 🌹</h2>
+                <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/604790958_122181888572468331_3966584981480694794_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGyeqzZ-U0SiJrk-Ij_G1MjbUkO_e5L4aVtSQ797kvhpSTJD2AXBOy0NBcvmE2qjhwNoh-4l8HIxFFxlSVVSaKK&_nc_ohc=oPMj5fOdEtIQ7kNvwG8ZIUO&_nc_oc=AdmMA7odhgBE2hp1SKcpMsfr03lkhaA3R0OCsVMfWMjqWz5-y3fabBYX-x9eiA9ctcM&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_gid=r_Jt-BpwCwXLX96K5L88cg&_nc_ss=8&oh=00_AfvlRgWsJBZGbcumR-Iis8UvCDi2mvU5yMGlP3B4g-26Wg&oe=69A7A852" alt="Our Favorite Memory" class="birthday-pic">
+                 <p>I love you more than words can say!</p>
+            </div>
+        </div>
+    </div>
+
+        
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+  <script>
+    function revealGift() {
+        // Lalabas ang text
+        document.getElementById('surprise').classList.remove('hidden');
+        
+        // Sabog ang confetti!
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#ff4d6d', '#ffb3c1', '#ffffff']
+        });
+    }
+</script>
+    </script>
+</body>
+</html>
